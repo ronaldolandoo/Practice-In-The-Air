@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <nav>
-        <a href="/">Logo</a>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 2</li>
-        </ul>
-    </nav>
+    <header class="header"> <!--É engraçado, o header recebe a class "header"-->
+        <nav>
+            <a href="/">Logo</a>
+            <ul class="menu"> <!--O menu esta aqui, não na tag menu (nav)-->
+                <li><a href="/">Item 1</a></li>
+                <li><a href="/">Item 2</a></li>
+                <li><a href="/">Item 2</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
