@@ -8,6 +8,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    margin-bottom: 100px;
+}
+
 nav a {
     text-decoration: none;
     color: white;
@@ -86,9 +90,15 @@ nav ul {
     align-items: center; /*CENTRALIZAR VERTICALMENTE UM ELEMENTO*/
 }
 
-.anuncio {
+.grid1 > div.anuncio {
     grid-column: 1;
     grid-row: 2 / 5;
     border-top: 10px solid tomato;
     display: block;
+}
+
+@media (max-width: 600px) { /*É muito simples, basta especificares o tamanho de tela que queres configurar*/
+    .grid1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
