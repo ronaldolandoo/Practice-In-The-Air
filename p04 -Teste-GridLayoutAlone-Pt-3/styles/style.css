@@ -74,6 +74,21 @@ nav ul {
 .grid1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 800px;
+    max-width: 780px;
     margin: 0 auto;
+    gap: 20px;
+}
+
+.grid1 > div:nth-child(n + 4) { /*nth-child(n_do_elemento) é para selecionar um elemento específico*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; /*ESPAÇAMENTO*/
+    align-items: center; /*CENTRALIZAR VERTICALMENTE UM ELEMENTO*/
+}
+
+.anuncio {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    border-top: 10px solid tomato;
+    display: block;
 }
