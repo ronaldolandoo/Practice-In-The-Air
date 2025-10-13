@@ -169,6 +169,7 @@ nav ul {
 .grid3-item img {
     grid-column: 1;
     grid-row: 1/3;
+    align-self: end;
 }
 
 .grid3-item p {
@@ -177,4 +178,5 @@ nav ul {
     color: white;
     grid-column: 1;
     grid-row: 2;
+    align-self: end;
 }
